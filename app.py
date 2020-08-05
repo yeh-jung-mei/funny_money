@@ -38,7 +38,7 @@ def callback():
         abort(400)
 
     return 'OK'
-
+#cccccc
 
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
