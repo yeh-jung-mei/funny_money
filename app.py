@@ -38,7 +38,7 @@ def callback():
         abort(400)
 
     return 'OK'
-#cccccc
+
 
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
@@ -48,13 +48,8 @@ def handle_message(event):
     output_text=input_no*2
     line_bot_api.reply_message(
         event.reply_token,
-        
         TextSendMessage(str(output_text)))
-        #TextSendMessage(text=event.message.text))
-        #input_text = event.message.text
-        #input_no = eval(input_text)
-        #output_text=input_no*2
-        #TextSendMessage(str(output_text)))
+
 
     
 
